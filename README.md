@@ -41,8 +41,8 @@ yum install fio
 
 1. Clone this repository:
 ```bash
-git clone <repository-url>
-cd ceph-performance-testing
+git clone https://git.gadgetboy.org/Homelab/ceph-iops-performance.git
+cd ceph-iops-performance
 ```
 
 2. Make the script executable:
@@ -51,6 +51,7 @@ chmod +x ceph_iops_test.sh
 ```
 
 3. Verify Ceph cluster access:
+
 ```bash
 ceph -s
 ```
@@ -58,11 +59,13 @@ ceph -s
 ## Usage
 
 ### Basic Usage
+
 ```bash
 sudo ./ceph_iops_test.sh
 ```
 
 ### Example Output
+
 ```
 === Ceph IOPS Testing Suite ===
 Results will be saved to: /tmp/ceph_iops_test_20250706_143022
@@ -100,6 +103,7 @@ The script generates a timestamped directory containing:
 | `osd_bench_results.txt` | Individual OSD benchmark results |
 
 ### Sample Output Structure
+
 ```
 /tmp/ceph_iops_test_20250706_143022/
 ├── performance_summary.txt
